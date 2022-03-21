@@ -1,21 +1,45 @@
-*
-{
+* {
     padding: 0;
     margin: 0;
 }
 
 body,
-html
-{
+html {
     overflow: hidden;
 }
 
-.webgl
-{
+.webgl {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
     background: #000000;
+}
+
+.action-container {
+    position: absolute;
+    bottom: 50px;
+    right: 50px;
+    z-index: 99;
+    display: flex;
+    width: 120px;
+    justify-content: space-between;
+}
+
+.btn {
+    padding: 15px;
+    box-shadow: -5px 0px 20px 0px #35353550;
+    background-color: #FDEA18;
+    outline: none;
+    border: none;
+    display: flex;
+    align-items: center;
+    transition: .3s ease-in-out;
+    justify-content: center;
+}
+
+.rounded {
+    border-radius: 100px;
+    ;
 }

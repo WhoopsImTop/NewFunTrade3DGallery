@@ -8,6 +8,7 @@ export class Card {
 
     createGeometry() {
         const geometry = new THREE.BoxGeometry(9, 16, 0.1);
+        geometry.uvsNeedUpdate = true
         const material = [
             new THREE.MeshBasicMaterial({
                 color: 0x353535,
@@ -51,7 +52,6 @@ export class Card {
         videoElement.setAttribute('crossorigin', 'anonymous');
         videoElement.setAttribute('webkit-playsinline', 'webkit-playsinline');
         videoElement.setAttribute('playsinline', 'playsinline');
-        videoElement.setAttribute('autoplay', 'autoplay');
         videoElement.setAttribute('muted', 'muted');
         videoElement.setAttribute('loop', 'loop');
         videoElement.setAttribute('preload', 'auto');
