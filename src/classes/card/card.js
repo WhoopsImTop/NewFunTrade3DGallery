@@ -18,43 +18,43 @@ export class Card {
         );
         geometry.uvsNeedUpdate = true;
         const material = [
-            new THREE.MeshToonMaterial({
+            new THREE.MeshPhysicalMaterial({
                 color: 0x353535,
                 side: THREE.DoubleSide,
                 transparent: true,
                 wireframeLinewidth: 5,
             }),
-            new THREE.MeshToonMaterial({
+            new THREE.MeshPhysicalMaterial({
                 color: 0x353535,
                 side: THREE.DoubleSide,
                 transparent: true,
                 wireframeLinewidth: 5,
             }),
-            new THREE.MeshToonMaterial({
+            new THREE.MeshPhysicalMaterial({
                 color: 0x353535,
                 side: THREE.DoubleSide,
                 transparent: true,
                 wireframeLinewidth: 5,
             }),
-            new THREE.MeshToonMaterial({
+            new THREE.MeshPhysicalMaterial({
                 color: 0x353535,
                 side: THREE.DoubleSide,
                 transparent: true,
                 wireframeLinewidth: 5,
             }),
-            new THREE.MeshToonMaterial({
+            new THREE.MeshPhysicalMaterial({
                 map: new THREE.VideoTexture(this.createVideoElement(this.frontVideo)),
                 side: THREE.FrontSide,
                 transparent: true,
             }),
-            new THREE.MeshToonMaterial({
+            new THREE.MeshPhysicalMaterial({
                 map: new THREE.VideoTexture(this.createVideoElement(this.backVideo)),
                 side: THREE.FrontSide,
                 transparent: true,
             }),
         ];
         const image = new THREE.TextureLoader();
-        const circleMat = new THREE.MeshBasicMaterial({
+        const circleMat = new THREE.MeshPhysicalMaterial({
             map: image.load('textures/gradient.png'),
             transparent: true,
             visible: false,

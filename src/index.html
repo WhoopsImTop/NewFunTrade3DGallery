@@ -5,16 +5,24 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <enable-gpu>true</enable-gpu>
     <title>Webpack THREE.js Template</title>
 </head>
 
 <body>
-    <div class="action-container">
-        <botton class="btn minus rounded"><img src="../static/images/left_arrow.svg"></botton>
-        <button class="btn plus rounded"><img src="../static/images/right_arrow.svg"></button>
+    <div class="textContianer welcome">
+        <div class="heading-container">
+            <h4>New Fun Trade Gallery</h4>
+            <h1>catchy tune radio</h1>
+            <span>collection</span>
+            <div class="spacer"></div>
+            <button id="preloadButton" class="btn btn-primary rounded play"><img src="../static/images/play.svg"></button>
+            <progress value="0" max="100" id="progressbar"></progress>
+        </div>
     </div>
-    <canvas class="webgl"></canvas>
+    <div class="action-container" style="display: none;">
+        <botton class="btn btn-secondary minus rounded"><img src="../static/images/left_arrow.svg"></botton>
+        <button class="btn btn-secondary plus rounded"><img src="../static/images/right_arrow.svg"></button>
+    </div>
 </body>
 
 </html>
