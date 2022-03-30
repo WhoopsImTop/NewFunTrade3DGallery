@@ -34,8 +34,11 @@
         "webpack-merge": "^4.2.2"
     },
     "dependencies": {
+        "axios": "^0.26.1",
+        "cheerio": "^1.0.0-rc.10",
         "dat.gui": "^0.7.7",
         "gsap": "^3.9.1",
+        "node-html-parser": "^5.3.3",
         "stats.js": "^0.17.0",
         "three.interaction": "^0.2.3"
     }
